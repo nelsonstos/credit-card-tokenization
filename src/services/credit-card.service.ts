@@ -15,7 +15,6 @@ class CreditCardService {
             await creditCardRepository.saveToken(tokenId, token);
             return tokenId;
         } catch (error) {
-            console.error('Error creating the token: ', error);
             return error;
         }
     }
@@ -24,7 +23,7 @@ class CreditCardService {
         try {
             const token = await creditCardRepository.getToken(tokenId);
             if(!token) {
-                throw new Error('Token does not exist');
+              return null;
             }
             const decodeToken = jwt.verifyToken(token);
 
@@ -33,7 +32,6 @@ class CreditCardService {
 
             return cardDataWithoutCVV; 
         } catch (error) {
-            console.error('Error gettin token: ', error);
             return error;
         }
     }
