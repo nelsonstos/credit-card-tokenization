@@ -12,7 +12,7 @@ Las pasarelas de pago suelen almacenar las tarjetas de crédito encriptadas para
 - Base de Datos No Relacional: Redis
 
 ## Instalación
-1. Clona este repositorio: `git clone https://github.com/tu-usuario/tu-proyecto.git`
+1. Clona este repositorio: `git clone https://github.com/challenge-develop/credit-card-tokenization.git`
 2. Instala las dependencias: `npm install`
 
 ## Configuración
@@ -70,5 +70,4 @@ Si deseas contribuir a este proyecto, sigue estos pasos:
 4. Haz push a la rama: `git push origin feature-nueva`
 5. Envía un pull request
 
-## Licencia
-Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+
