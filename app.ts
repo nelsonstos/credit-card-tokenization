@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 app.use(authMiddleware);
 
 // Routes
-app.use(router)
+app.use('/api/v1', router)
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000');

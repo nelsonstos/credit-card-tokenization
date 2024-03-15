@@ -4,7 +4,7 @@ import { creditCardSchema, validateCreditCard } from '../validators/credit-card.
 
 const router = Router();
 
-router.post('/token', creditCardSchema(), validateCreditCard, creditCardController.createToken);
-router.get('/token/:tokenId', creditCardController.getToken);
+router.post('/credit-card/token', creditCardSchema(), validateCreditCard, creditCardController.createToken);
+router.get('/credit-card/token/:tokenId', creditCardController.getToken);
 
 export default router;
